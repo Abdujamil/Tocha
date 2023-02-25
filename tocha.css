@@ -1,0 +1,559 @@
+@font-face {
+  font-family: "Gilroy-UltraLight";
+
+  src: local("Gilroy-UltraLight"),
+    url("./fonts/Gilroy-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+
+  src: local("Gilroy-Light"), url("./fonts/Gilroy-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Thin";
+
+  src: local("Gilroy-Thin"), url("./fonts/Gilroy-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Heavy";
+
+  src: local("Gilroy-Heavy"), url("./fonts/Gilroy-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+
+  src: local("Gilroy-Regular"),
+    url("./fonts/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+
+  src: local("Gilroy-Medium"),
+    url("./fonts/Gilroy-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+
+  src: local("Gilroy-Semibold"),
+    url("./fonts/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+
+  src: local("Gilroy-Bold"), url("./fonts/Gilroy-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy-Extrabold";
+
+  src: local("Gilroy-Bold"),
+    url("./fonts/Gilroy-Extrabold.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gilroy-ExtraBold";
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1133px;
+  background-color: #f2f7ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+  max-width: 1110px;
+}
+
+.header .link-logo {
+  text-decoration: none;
+}
+
+.header .head {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .head .logo {
+  width: 55px;
+  height: 42px;
+}
+
+.header .head .logo-text {
+  font-family: "Gilroy-ExtraBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.1106px;
+  line-height: 21px;
+  color: #1d2530;
+}
+
+.header .links ul {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.header .links ul li a {
+  text-decoration: none;
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1d2530;
+}
+
+.header .links ul li .active {
+  color: #685ed6;
+  font-family: "Gilroy-bold";
+}
+
+.header .links ul li a:hover {
+  /* font-family: "Gilroy-Regular"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #685ed6;
+  transition: all 0.2s ease-in-out;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  min-height: 555px;
+  position: relative;
+  margin-top: 125px;
+  margin-bottom: 60px;
+}
+
+.home .texts {
+  max-width: 482px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.home .texts h1 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  margin-bottom: 25px;
+}
+
+.home .texts h1 span {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #685ed6;
+}
+
+.home .texts p {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1d2530;
+  margin-bottom: 32px;
+}
+
+.home .texts p span {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #685ed6;
+}
+
+.home .texts .home-btn {
+  width: 168px;
+  height: 48px;
+  background: #685ed6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 12px 32px;
+  border-color: transparent;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Gilroy-Medium";
+  cursor: pointer;
+}
+
+.home .texts .home-btn:hover {
+  background: #463daa;
+  transition: background 0.3s ease-in-out;
+}
+
+.home img {
+  height: 555px;
+  width: 690px;
+}
+
+.home .blur-pink {
+  position: absolute;
+  top: auto;
+  bottom: 12%;
+  left: -8%;
+  width: 189px;
+  height: 142px;
+  background: rgba(140, 48, 245, 0.4);
+  transform: rotate(30deg);
+  filter: blur(45px);
+  z-index: 0;
+  opacity: 0.6;
+}
+.home .blur-pink2 {
+  position: absolute;
+  top: auto;
+  bottom: 8%;
+  right: 0;
+  width: 343px;
+  height: 257px;
+  background: rgba(140, 48, 245, 0.4);
+  transform: rotate(30deg);
+  filter: blur(60px);
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.home .blur-green {
+  position: absolute;
+  top: 0;
+  left: 65%;
+  z-index: -1;
+  width: 133px;
+  height: 133px;
+  background: #18e1f7;
+  opacity: 0.6;
+  filter: blur(45px);
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 82px;
+  padding-top: 70px;
+}
+
+.about_items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 540px;
+}
+
+.about_items h1 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 32px;
+  color: #1d2530;
+}
+
+.about_items .item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 26px;
+}
+.about_items .item img {
+  width: 68px;
+  height: 68px;
+}
+
+.about_items .item h3 {
+  font-family: "Gilroy-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  margin-bottom: 8px;
+}
+
+.about_items .item p {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+}
+
+.about .about-background img {
+  height: 666px;
+  width: 411px;
+}
+
+/* Tariffs */
+
+.tarrifs {
+  padding: 100px 0 100px 0;
+}
+.tarrifs_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tarrifs_title h1 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 32px;
+  color: #1d2530;
+}
+
+.tarrifs_title p {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  margin-top: 16px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  width: 350px;
+  height: 387px;
+  background: #fcfeff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.card .card_head {
+  padding: 7px 0 7px 0;
+  background: rgba(104, 94, 214, 0.05);
+}
+
+.card .card_head h2 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 48px;
+  color: #685ed6;
+}
+
+.cards .card h1 {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: #1d2530;
+  max-width: 255px;
+  margin: 0 auto;
+}
+
+.cards .card p {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #1d2530;
+  margin-bottom: 46px;
+  margin-top: 32px;
+}
+
+.card_body {
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.card_body .tarrifs_btn {
+  width: 287px;
+  height: 48px;
+  background: #685ed6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  border-color: transparent;
+  color: white;
+  font-family: "Gilroy-Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.card_body .tarrifs_btn:hover {
+  background: #463daa;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Connections */
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 120px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.connections h1 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.first-step {
+  max-width: 214px;
+  text-align: center;
+}
+
+.steps_blur_green {
+  position: absolute;
+  top: auto;
+  left: -3%;
+  bottom: 20%;
+  z-index: -1;
+  width: 133px;
+  height: 133px;
+  background: #18e1f7;
+  opacity: 0.6;
+  filter: blur(45px);
+}
+
+.second-step {
+  max-width: 300px;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.scnd_blur_green {
+  position: absolute;
+  top: auto;
+  left: 52%;
+  bottom: 20%;
+  z-index: -1;
+  width: 140px;
+  height: 133px;
+  background: #18e1f7;
+  opacity: 0.6;
+  filter: blur(45px);
+}
+
+.scnd_blur_pink {
+  position: absolute;
+  top: auto;
+  bottom: 40%;
+  width: 250px;
+  height: 142px;
+  background: rgba(140, 48, 245, 0.4);
+  transform: rotate(30deg);
+  filter: blur(45px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.thrd_blur_pink {
+  position: absolute;
+  top: auto;
+  bottom: 25%;
+  left: auto;
+  right: 2%;
+  width: 250px;
+  height: 142px;
+  background: rgba(140, 48, 245, 0.4);
+  transform: rotate(30deg);
+  filter: blur(45px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.first-step h3,
+.second-step h3 {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  margin-bottom: 4px;
+}
+
+.first-step p,
+.second-step p {
+  font-family: "Gilroy-Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  margin-bottom: 56px;
+}
+
+.first_step_title img {
+  margin-bottom: 16px;
+}
+
+.frst_screen {
+  height: 471px;
+  width: 236px;
+}
+
+.scnd_screen {
+  height: 559px;
+  width: 280px;
+}
+
+.thrd_screen {
+  height: 461px;
+  width: 232px;
+}
