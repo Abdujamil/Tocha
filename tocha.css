@@ -214,7 +214,9 @@ body {
 
 .home img {
   height: 555px;
+  max-height: 50vw;
   width: 690px;
+  max-width: 62vw;
 }
 
 .home .blur-pink {
