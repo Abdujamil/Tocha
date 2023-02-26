@@ -57,6 +57,12 @@
     url("./fonts/Gilroy-Extrabold.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Inter-Medium";
+
+  src: url("./fonts/Inter-Medium.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -66,16 +72,18 @@ body {
   font-family: "Gilroy-ExtraBold";
   margin: 0 auto;
   padding: 0;
-  max-width: 1133px;
+  max-width: 1440px;
   background-color: #f2f7ff;
 }
-
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 35px;
-  max-width: 1110px;
 }
 
 .header .link-logo {
@@ -558,4 +566,201 @@ body {
 .thrd_screen {
   height: 461px;
   width: 232px;
+}
+
+/* REVIEW */
+
+.review {
+  position: relative;
+  background: url(./img/Quote_Mark.svg) right top no-repeat;
+  margin-bottom: 100px;
+}
+
+.review h1 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  padding: 32px 32px 32px 32px;
+  max-width: 488px !important;
+  max-height: 540px;
+  margin-bottom: 28px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.swiper-slide h5 {
+  font-family: "Inter-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #18191f;
+  margin-bottom: 28px;
+}
+
+.swiper-slide p {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #18191f;
+}
+
+.review_client {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.client_name {
+  text-align: left;
+}
+
+.client_name h3 {
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+}
+
+.client_name a {
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #1d2530;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #685ed6;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: url(./img/join-background.png) no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  max-height: 288px;
+  margin-bottom: 90px;
+}
+.join .email {
+  max-width: 445px;
+}
+
+.join .email h1 {
+  font-family: "Gilroy-Extrabold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 41px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.email .send input {
+  padding: 14px 16px;
+  width: 248px;
+  background: #f4f5f7;
+  border-color: transparent;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.email .send input:focus {
+  outline: none;
+}
+
+.send_btn {
+  padding: 14px 24px;
+  width: 120px;
+  background: #18191f;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+  font-family: "Gilroy-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+
+.send_btn:hover {
+  background-color: #1d1d52;
+}
+
+.footer {
+  background-color: #1d2530;
+  display: flex;
+  justify-content: space-between;
+  padding: 104px 165px;
+}
+
+.foot_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 477px;
+}
+
+.foot_item h3 {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #f4f5f7;
+  margin-bottom: 32px;
+}
+.foot_item ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.foot_item ul > li a {
+  text-decoration: none;
+  font-family: "Gilroy-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #eeeff4;
+}
+
+.foot_item ul > li a:hover{
+  color: #685ed6;
 }

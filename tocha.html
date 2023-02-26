@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./tocha.css" />
+    <link rel="stylesheet" href="./swiper/swiper.css" />
     <title>Tocha</title>
   </head>
   <body>
@@ -121,7 +122,6 @@
           </div>
         </div>
       </section>
-
       <section class="connections">
         <h1>Всего 3 шага для подключения Telegram чата</h1>
         <div class="steps">
@@ -163,6 +163,133 @@
           </div>
         </div>
       </section>
+      <section class="review">
+        <h1>Отзывы клиентов</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h5>Как же удобно!</h5>
+              <p>
+                В рамках спецификации современных стандартов, базовые сценарии
+                поведения пользователей, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут
+                преданы социально-демократической анафеме.
+              </p>
+              <div class="review_client">
+                <img src="./img/ava.png" alt="person" />
+                <div class="client_name">
+                  <h3>Анна Купер</h3>
+                  <a href="#">romashka.ru</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h5>Теперь мы идем в ногу со временем</h5>
+              <p>
+                В рамках спецификации современных стандартов, базовые сценарии
+                поведения пользователей, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут
+                преданы социально-демократической анафеме.
+              </p>
+              <div class="review_client">
+                <img src="./img/ava-2.png" alt="person" />
+                <div class="client_name">
+                  <h3>Анна Купер</h3>
+                  <a href="#">romashka.ru</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h5>Как же удобно!</h5>
+              <p>
+                В рамках спецификации современных стандартов, базовые сценарии
+                поведения пользователей, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут
+                преданы социально-демократической анафеме.
+              </p>
+              <div class="review_client">
+                <img src="./img/ava.png" alt="person" />
+                <div class="client_name">
+                  <h3>Анна Купер</h3>
+                  <a href="#">romashka.ru</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h5>Теперь мы идем в ногу со временем</h5>
+              <p>
+                В рамках спецификации современных стандартов, базовые сценарии
+                поведения пользователей, которые представляют собой яркий пример
+                континентально-европейского типа политической культуры, будут
+                преданы социально-демократической анафеме.
+              </p>
+              <div class="review_client">
+                <img src="./img/ava-2.png" alt="person" />
+                <div class="client_name">
+                  <h3>Анна Купер</h3>
+                  <a href="#">romashka.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="join">
+        <img src="./img/join.png" alt="hand-phone" />
+        <div class="email">
+          <h1>Подключите Telegram чат уже сегодня</h1>
+          <div class="send">
+            <input
+              type="email"
+              placeholder="Введите e-mail"
+              pattern=".+@globex\.com"
+              size="30"
+              required
+            />
+            <button class="send_btn">Отправить</button>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <a href="#">
+        <img src="./img/footer_logo.png" alt="logo" />
+      </a>
+      <div class="foot_items">
+        <div class="foot_item">
+          <h3>Telegram чат</h3>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Инструкция</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="foot_item">
+          <h3>Поддержка</h3>
+          <ul>
+            <li><a href="#">Центр поддержки</a></li>
+            <li><a href="#">Политика конфеденциальности</a></li>
+            <li><a href="#">Документы оферта</a></li>
+            <li><a href="#">Документы оферта</a></li>
+            <li><a href="#">Статус</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./tocha.js"></script>
+    <script src="./swiper/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
