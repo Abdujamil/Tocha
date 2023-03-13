@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Gilroy-UltraLight";
+
+    src: local("Gilroy-UltraLight"),
+    url("fonts/Gilroy-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+
+    src: local("Gilroy-Light"), url("fonts/Gilroy-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Thin";
+
+    src: local("Gilroy-Thin"), url("fonts/Gilroy-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Heavy";
+
+    src: local("Gilroy-Heavy"), url("fonts/Gilroy-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+
+    src: local("Gilroy-Regular"),
+    url("fonts/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+
+    src: local("Gilroy-Medium"),
+    url("fonts/Gilroy-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Semibold";
+
+    src: local("Gilroy-Semibold"),
+    url("fonts/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+
+    src: local("Gilroy-Bold"), url("fonts/Gilroy-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Extrabold";
+
+    src: local("Gilroy-Bold"),
+    url("fonts/Gilroy-Extrabold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+
+    src: url("fonts/Inter-Medium.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Gilroy-ExtraBold";
+    background-color: #f2f7ff;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 480px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    z-index: 99999;
+    position: relative;
+    padding: 50px 70px 45px 70px;
+    margin: 10px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 375px;
+}
+
+section img{
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+section h2{
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    font-size: 20px;
+    text-decoration: transparent;
+    color: #605dec;
+}
+
+
+
+

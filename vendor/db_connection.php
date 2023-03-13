@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require_once 'registeration.php';
 
 $connect = mysqli_connect('localhost', 'root', '', 'tocha');

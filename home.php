@@ -21,8 +21,8 @@
           <ul>
             <li><a href="#" class="active">Подключение</a></li>
             <li><a href="#">Оплата</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="/">Выход</a></li>
+            <li><a href="#footer">Контакты</a></li>
+            <li><a href="/profile.php">Личный кабинет</a></li>
           </ul>
         </div>
       </header>
@@ -279,7 +279,7 @@
         </div>
       </div>
     </footer>
-    <script src="./tocha.js"></script>
+    <script src="js/tocha.js"></script>
     <script src="./swiper/swiper.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {

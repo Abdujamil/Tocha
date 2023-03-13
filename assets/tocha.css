@@ -273,18 +273,22 @@ main {
   font-size: 18px;
   border-color: transparent;
   width: 100%;
-  height: 40px;
   height: 48px;
+    outline: none;
 }
 
 .log-body input:hover {
-  border: 1px solid #e8e6f8;
+  border: .5px solid #e8e6f8;
   transition: background 0.3s ease-in-out;
 }
 
 .log-body input:focus {
-  border: 1px solid #605dec !important;
+  border: .5px solid #605dec !important;
   outline: none;
+}
+
+.log-body .msg-error{
+    color: red;
 }
 
 .error {
