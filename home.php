@@ -110,7 +110,7 @@ if (!$_SESSION['user']) {
         <div class="cards">
             <div class="card">
                 <div class="card_head">
-                    <h2>бесплатно</h2>
+                    <h2>Бесплатно</h2>
                 </div>
                 <div class="card_body">
                     <h1>Пробный период на 1 месяц</h1>
@@ -186,7 +186,7 @@ if (!$_SESSION['user']) {
     </section>
     <section id="#review" class="review">
         <h1>Отзывы клиентов</h1>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper" pagination="true" pagination-dynamic-bullets="true">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <h5>Как же удобно!</h5>
@@ -273,7 +273,7 @@ if (!$_SESSION['user']) {
         </div>
     </section>
 </main>
-<footer id="footer" class="footer">
+    <footer id="footer" class="footer">
     <a href="#">
         <img src="assets/img/footer_logo.png" alt="logo"/>
     </a>
@@ -302,18 +302,25 @@ if (!$_SESSION['user']) {
 </footer>
 <script src="./js/tocha.js"></script>
 <script src="./swiper/swiper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        autoplay: {
-            delay: 4000,
-        },
+        // autoplay: {
+        //     delay: 3000,
+        // },
         loop: true,
         slidesPerView: 2,
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        },
+            dynamicBullets: true,
+        }
+        // breakpoints: {
+        //     1024: {
+        //         slidesPerView: 1,
+        //     },
+        // },
     });
 </script>
 </body>
