@@ -1,9 +1,9 @@
-<?php session_start();
+<!--<?php session_start();-->
 
-//if (!$_SESSION['user']) {
-//    header('Location: ./vendor/profile.php');
-//}
-?>
+<!--//if (!$_SESSION['user']) {-->
+<!--//    header('Location: ./vendor/profile.php');-->
+<!--//}-->
+<!--?>-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,11 +29,11 @@
                         required
                     />
                     <input type="password" name="password" placeholder="Пароль"/>
-                    <?php if ($_SESSION['message']) {
-                        echo '<p class="msg-error">' . $_SESSION['message'] . '</p> ';
-                    }
-                    unset($_SESSION['message']);
-                    ?>
+<!--                        <?php if ($_SESSION['message']) {-->
+<!--                            echo '<p class="msg-error">' . $_SESSION['message'] . '</p> ';-->
+<!--                        }-->
+<!--                        unset($_SESSION['message']);-->
+<!--                        ?>-->
                     <button class="log-btn" type="submit">Войти</button>
                     <a href="/register.php"><span>Нет аккаунта? - </span> Зарегистрироваться</a>
                 </div>
